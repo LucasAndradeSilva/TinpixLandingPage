@@ -1,9 +1,9 @@
 <?php
     //FUNÇÃO QUE ENVIA O EMAIL    
-     string $TO = $_POST['CadEmail'];
-     string $NAME $_POST['CadNome'];
-     string $PHONE = $_POST['CadTel']; 
-     string $MESSAGE = '
+     $TO = $_REQUEST["CadEmail"];          
+     $NAME = $_REQUEST['CadNome'];
+     $PHONE = $_REQUEST['CadTel']; 
+     $MESSAGE = '
      <html> 
      <head>
       <title>Birthday Reminders for August</title>
@@ -24,8 +24,7 @@
      </body>
      </html>
      ';
-
-     echo "Pretes a Enviar";
+     
      $headers = 'MIME-Version: 1.0'. "\r\n";
      $headers .= 'Content-type: text/html; charset = charset=iso-8859-1' . "\r\n";
      $headers .= 'To: Lucas <lucas9.la2@gmail.com>' ."\r\n";
@@ -38,7 +37,6 @@
      else
      {
         echo "Falha ao Enviar o email!";
-     }
-    endif;
+     }    
 
 ?>

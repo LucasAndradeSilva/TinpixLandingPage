@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
 
     <!-- LINK CSS -->
-    <link  rel="stylesheet" href="/assets/css/StyleLandingPage.css"> 
+    <link  rel="stylesheet" href="../Projeto tinpix/assets/css/StyleLandingPage.css"> 
 
     <!-- LINK DO BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand mb-0 h1" href="#divParticipe">O que é?</a>
-        <Img src="/assets/img/logoTinpix.svg"></Img>
+        <Img src="../Projeto tinpix/assets/img/logoTinpix.svg"></Img>
         <a class="navbar-brand mb-0 h1" href="#formEnviar">Participe</a>
     </nav>
 
@@ -25,7 +25,7 @@
         <div class="row no-gutters">
             <!-- IMAGEM -->
           <div class="col-md-4">
-            <img src="/assets/img/backgroud.jpg" class="card-img" alt="...">
+            <img src="../Projeto tinpix/assets/img/backgroud.jpg" class="card-img" alt="...">
           </div>
           <!-- CONTEÚDO -->
           <div class="col-md-8">
@@ -50,7 +50,7 @@
           <!-- CONTEÚDO -->
           <div class="col-md-5">
             <div class="card-body">
-                <form method="POST " action="/assets/php/email.php" class="form-inline-block" id="formEnviar">                                
+                <form method="post" action="../Projeto tinpix/assets/php/email.php" class="form-inline-block" id="formEnviar">                                
                     <div class="form-group">
                         <label>NOME</label>
                         <input type="text" name="CadNome" class="form-control" placeholder="Ex.: Lucas Andrade">
@@ -64,15 +64,20 @@
                         <input type="tel" name="CadTel" class="form-control">
                     </div>
                     <button type="submit" id="btnEnviar" class="btn btn-success">ENVIAR</button>
+                    <a class="btn btn-success" href="../Projeto tinpix/Pages/EmailMarkting.html">Entrar</a>
                 </form>
             </div>
           </div>
         </div>
       </div>               
     
+
+    <!-- LINK DO JAVA SCRIPTY-->
+    <script src="../Projeto tinpix/assets/js/JsIndex.js"></script>
+
     <!-- LINK DO BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  </body>  
 </html>
