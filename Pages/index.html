@@ -50,20 +50,20 @@
           <!-- CONTEÚDO -->
           <div class="col-md-5">
             <div class="card-body">
-                <form method="post" action="" class="form-inline-block" id="formEnviar">                                
+                <form method="POST " action="/assets/php/email.php" class="form-inline-block" id="formEnviar">                                
                     <div class="form-group">
                         <label>NOME</label>
-                        <input type="text" class="form-control" placeholder="Ex.: Lucas Andrade">
+                        <input type="text" name="CadNome" class="form-control" placeholder="Ex.: Lucas Andrade">
                     </div>
                     <div class="form-group">
                         <label>EMAIL</label>
-                        <input type="email" class="form-control" placeholder="LucasAndrade@gmail.com">
+                        <input type="email" name="CadEmail" class="form-control" placeholder="LucasAndrade@gmail.com">
                     </div>
                     <div class="form-group">
                         <label>TELEFONE</label>
-                        <input type="tel" class="form-control">
+                        <input type="tel" name="CadTel" class="form-control">
                     </div>
-                    <button type="button" id="btnEnviar" class="btn btn-success">ENVIAR</button>
+                    <button type="submit" id="btnEnviar" class="btn btn-success">ENVIAR</button>
                 </form>
             </div>
           </div>
